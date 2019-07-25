@@ -1,0 +1,1727 @@
+arm-none-symbianelf-g++ -c -olibretro/libretro.o libretro/libretro.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from ./nes_emu/Nes_Emu.h:9:0,
+                 from libretro/libretro.cpp:7:
+./nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from libretro/libretro.cpp:5:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from ./nes_emu/Nes_Emu.h:9:0,
+                 from libretro/libretro.cpp:7:
+./nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from libretro/libretro.cpp:5:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/abstract_file.o nes_emu/abstract_file.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Data_Reader.h:8:0,
+                 from nes_emu/abstract_file.h:11,
+                 from nes_emu/abstract_file.cpp:2:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Data_Reader.h:8,
+                 from nes_emu/abstract_file.h:11,
+                 from nes_emu/abstract_file.cpp:2:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Data_Reader.h:8:0,
+                 from nes_emu/abstract_file.h:11,
+                 from nes_emu/abstract_file.cpp:2:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Data_Reader.h:8,
+                 from nes_emu/abstract_file.h:11,
+                 from nes_emu/abstract_file.cpp:2:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/apu_state.o nes_emu/apu_state.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/apu_state.h:10:0,
+                 from nes_emu/apu_state.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/apu_state.h:10,
+                 from nes_emu/apu_state.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/apu_state.h:10:0,
+                 from nes_emu/apu_state.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/apu_state.h:10,
+                 from nes_emu/apu_state.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Blip_Buffer.o nes_emu/Blip_Buffer.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+arm-none-symbianelf-g++ -c -ones_emu/Effects_Buffer.o nes_emu/Effects_Buffer.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Effects_Buffer.h:10,
+                 from nes_emu/Effects_Buffer.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Effects_Buffer.h:10,
+                 from nes_emu/Effects_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Effects_Buffer.h:10,
+                 from nes_emu/Effects_Buffer.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Effects_Buffer.h:10,
+                 from nes_emu/Effects_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Fme7.o nes_emu/Mapper_Fme7.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Fme7.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Fme7.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Fme7.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Fme7.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Mmc5.o nes_emu/Mapper_Mmc5.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Mmc5.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Mmc5.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Mmc5.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Mmc5.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Namco106.o nes_emu/Mapper_Namco106.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco106.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco106.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco106.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco106.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Vrc6.o nes_emu/Mapper_Vrc6.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc6.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc6.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc6.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc6.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/misc_mappers.o nes_emu/misc_mappers.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/misc_mappers.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/misc_mappers.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/misc_mappers.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/misc_mappers.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_15.o nes_emu/Mapper_15.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_15.cpp:18:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_15.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_15.cpp:18:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_15.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_60.o nes_emu/Mapper_60.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_60.cpp:18:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_60.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_60.cpp:18:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_60.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Multi_Buffer.o nes_emu/Multi_Buffer.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Multi_Buffer.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Multi_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Multi_Buffer.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Multi_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Apu.o nes_emu/Nes_Apu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Apu.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Apu.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Buffer.o nes_emu/Nes_Buffer.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Cart.o nes_emu/Nes_Cart.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Cart.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Cart.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Cart.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Cart.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Core.o nes_emu/Nes_Core.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Core.h:9:0,
+                 from nes_emu/Nes_Core.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Core.h:9,
+                 from nes_emu/Nes_Core.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Core.h:9:0,
+                 from nes_emu/Nes_Core.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Core.h:9,
+                 from nes_emu/Nes_Core.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Cpu.o nes_emu/Nes_Cpu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cpu.h:10:0,
+                 from nes_emu/Nes_Cpu.cpp:13:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cpu.h:10,
+                 from nes_emu/Nes_Cpu.cpp:13:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cpu.h:10:0,
+                 from nes_emu/Nes_Cpu.cpp:13:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cpu.h:10,
+                 from nes_emu/Nes_Cpu.cpp:13:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/nes_data.o nes_emu/nes_data.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/nes_data.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/nes_data.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/nes_data.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/nes_data.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Effects_Buffer.o nes_emu/Nes_Effects_Buffer.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Multi_Buffer.h:9:0,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Multi_Buffer.h:9,
+                 from nes_emu/Nes_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.h:9,
+                 from nes_emu/Nes_Effects_Buffer.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Emu.o nes_emu/Nes_Emu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Emu.h:9:0,
+                 from nes_emu/Nes_Emu.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Emu.h:9,
+                 from nes_emu/Nes_Emu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Emu.h:9:0,
+                 from nes_emu/Nes_Emu.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Emu.h:9,
+                 from nes_emu/Nes_Emu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_File.o nes_emu/Nes_File.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_File.h:9:0,
+                 from nes_emu/Nes_File.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_File.h:9,
+                 from nes_emu/Nes_File.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_File.h:9:0,
+                 from nes_emu/Nes_File.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_File.h:9,
+                 from nes_emu/Nes_File.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Fme7_Apu.o nes_emu/Nes_Fme7_Apu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Fme7_Apu.h:10:0,
+                 from nes_emu/Nes_Fme7_Apu.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Fme7_Apu.h:10,
+                 from nes_emu/Nes_Fme7_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Fme7_Apu.h:10:0,
+                 from nes_emu/Nes_Fme7_Apu.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Fme7_Apu.h:10,
+                 from nes_emu/Nes_Fme7_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Mapper.o nes_emu/Nes_Mapper.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mapper.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mapper.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mapper.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mapper.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/nes_mappers.o nes_emu/nes_mappers.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/nes_mappers.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/nes_mappers.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/nes_mappers.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/nes_mappers.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Mmc1.o nes_emu/Nes_Mmc1.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc1.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc1.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc1.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc1.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Mmc3.o nes_emu/Nes_Mmc3.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc3.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc3.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc3.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Mmc3.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Misc.o nes_emu/Mapper_Misc.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Misc.cpp:1:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Misc.cpp:1:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Misc.cpp:1:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Misc.cpp:1:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Unrom512.o nes_emu/Mapper_Unrom512.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Unrom512.cpp:28:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Unrom512.cpp:28:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Unrom512.cpp:28:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Unrom512.cpp:28:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Vrc1.o nes_emu/Mapper_Vrc1.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc1.cpp:18:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc1.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc1.cpp:18:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc1.cpp:18:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Vrc3.o nes_emu/Mapper_Vrc3.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc3.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc3.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc3.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc3.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Vrc2_4.o nes_emu/Mapper_Vrc2_4.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc2_4.cpp:27:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc2_4.cpp:27:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc2_4.cpp:27:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc2_4.cpp:27:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Vrc7.o nes_emu/Mapper_Vrc7.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc7.cpp:3:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc7.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc7.cpp:3:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Vrc7.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Vrc7.o nes_emu/Nes_Vrc7.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Vrc7.cpp:1:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Vrc7.cpp:1:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Vrc7.cpp:1:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Nes_Vrc7.cpp:1:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/emu2413.o nes_emu/emu2413.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+arm-none-symbianelf-g++ -c -ones_emu/emu2413_state.o nes_emu/emu2413_state.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Namco_Apu.o nes_emu/Nes_Namco_Apu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Namco_Apu.h:10,
+                 from nes_emu/Nes_Namco_Apu.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Namco_Apu.h:10,
+                 from nes_emu/Nes_Namco_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Namco_Apu.h:10,
+                 from nes_emu/Nes_Namco_Apu.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Namco_Apu.h:10,
+                 from nes_emu/Nes_Namco_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mmc24.o nes_emu/Mmc24.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mmc24.cpp:3:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mmc24.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mmc24.cpp:3:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mmc24.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Oscs.o nes_emu/Nes_Oscs.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Oscs.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Oscs.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Oscs.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Oscs.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Ppu.o nes_emu/Nes_Ppu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu.h:9,
+                 from nes_emu/Nes_Ppu.cpp:6:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu.h:9,
+                 from nes_emu/Nes_Ppu.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu.h:9,
+                 from nes_emu/Nes_Ppu.cpp:6:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu.h:9,
+                 from nes_emu/Nes_Ppu.cpp:6:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Ppu_Impl.o nes_emu/Nes_Ppu_Impl.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Impl.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Impl.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Impl.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Impl.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+nes_emu/Nes_Ppu_Impl.cpp: In member function 'void Nes_Ppu_Impl::update_tiles(int)':
+nes_emu/Nes_Ppu_Impl.cpp:343:42: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if ( !(uint32_t&) modified_tiles [chunk] )
+                                          ^
+nes_emu/Nes_Ppu_Impl.cpp: In member function 'long int Nes_Ppu_Impl::recalc_sprite_max(int)':
+nes_emu/Nes_Ppu_Impl.cpp:426:54: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  (uint32_t&) sprite_max_scanlines [max_scanline_count] = 0;
+                                                      ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Ppu_Rendering.o nes_emu/Nes_Ppu_Rendering.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/nes_data.h:9:0,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_data.h:9,
+                 from nes_emu/Nes_Ppu_Impl.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.h:9,
+                 from nes_emu/Nes_Ppu_Rendering.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_State.o nes_emu/Nes_State.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_File.h:9:0,
+                 from nes_emu/Nes_State.h:9,
+                 from nes_emu/Nes_State.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_File.h:9,
+                 from nes_emu/Nes_State.h:9,
+                 from nes_emu/Nes_State.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_File.h:9:0,
+                 from nes_emu/Nes_State.h:9,
+                 from nes_emu/Nes_State.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_File.h:9,
+                 from nes_emu/Nes_State.h:9,
+                 from nes_emu/Nes_State.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/nes_util.o nes_emu/nes_util.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/nes_util.h:10:0,
+                 from nes_emu/nes_util.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_util.h:10,
+                 from nes_emu/nes_util.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/nes_util.h:10:0,
+                 from nes_emu/nes_util.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/nes_util.h:10,
+                 from nes_emu/nes_util.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Nes_Vrc6_Apu.o nes_emu/Nes_Vrc6_Apu.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Vrc6_Apu.h:11,
+                 from nes_emu/Nes_Vrc6_Apu.cpp:4:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Vrc6_Apu.h:11,
+                 from nes_emu/Nes_Vrc6_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Oscs.h:9:0,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Vrc6_Apu.h:11,
+                 from nes_emu/Nes_Vrc6_Apu.cpp:4:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Oscs.h:9,
+                 from nes_emu/Nes_Apu.h:12,
+                 from nes_emu/Nes_Vrc6_Apu.h:11,
+                 from nes_emu/Nes_Vrc6_Apu.cpp:4:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Data_Reader.o nes_emu/Data_Reader.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Data_Reader.h:8:0,
+                 from nes_emu/Data_Reader.cpp:3:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Data_Reader.h:8,
+                 from nes_emu/Data_Reader.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Data_Reader.h:8:0,
+                 from nes_emu/Data_Reader.cpp:3:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Data_Reader.h:8,
+                 from nes_emu/Data_Reader.cpp:3:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mappers.o nes_emu/Mappers.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_74x161x162x32.o nes_emu/Mapper_74x161x162x32.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_74x161x162x32.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_74x161x162x32.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_74x161x162x32.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_74x161x162x32.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_180.o nes_emu/Mapper_180.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_180.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_180.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_180.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_180.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_193.o nes_emu/Mapper_193.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_193.cpp:26:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_193.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_193.cpp:26:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_193.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_240.o nes_emu/Mapper_240.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_240.cpp:22:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_240.cpp:22:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_240.cpp:22:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_240.cpp:22:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_241.o nes_emu/Mapper_241.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_241.cpp:22:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_241.cpp:22:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_241.cpp:22:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_241.cpp:22:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_244.o nes_emu/Mapper_244.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_244.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_244.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_244.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_244.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_246.o nes_emu/Mapper_246.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_246.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_246.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_246.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_246.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_AveNina.o nes_emu/Mapper_AveNina.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_AveNina.cpp:26:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_AveNina.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_AveNina.cpp:26:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_AveNina.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_IremG101.o nes_emu/Mapper_IremG101.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremG101.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremG101.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremG101.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremG101.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_IremTamS1.o nes_emu/Mapper_IremTamS1.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremTamS1.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremTamS1.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremTamS1.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_IremTamS1.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_JalecoJF11.o nes_emu/Mapper_JalecoJF11.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_JalecoJF11.cpp:25:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_JalecoJF11.cpp:25:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_JalecoJF11.cpp:25:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_JalecoJF11.cpp:25:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Namco54xx.o nes_emu/Mapper_Namco54xx.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco54xx.cpp:26:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco54xx.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco54xx.cpp:26:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Namco54xx.cpp:26:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Sunsoft1.o nes_emu/Mapper_Sunsoft1.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft1.cpp:23:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft1.cpp:23:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft1.cpp:23:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft1.cpp:23:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Sunsoft2.o nes_emu/Mapper_Sunsoft2.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft2.cpp:23:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft2.cpp:23:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft2.cpp:23:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Sunsoft2.cpp:23:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_TaitoX1005.o nes_emu/Mapper_TaitoX1005.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoX1005.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoX1005.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoX1005.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoX1005.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_TaitoTC0190.o nes_emu/Mapper_TaitoTC0190.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoTC0190.cpp:24:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoTC0190.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoTC0190.cpp:24:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_TaitoTC0190.cpp:24:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/Mapper_Un1rom.o nes_emu/Mapper_Un1rom.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Un1rom.cpp:25:
+nes_emu/blargg_common.h:48:0: warning: "STATIC_CAST" redefined [enabled by default]
+ #define STATIC_CAST(T,expr) static_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Un1rom.cpp:25:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:226:0: note: this is the location of the previous definition
+ #define STATIC_CAST(type,exp) (static_cast<type>(exp))
+ ^
+In file included from nes_emu/Nes_Cart.h:10:0,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Un1rom.cpp:25:
+nes_emu/blargg_common.h:49:0: warning: "CONST_CAST" redefined [enabled by default]
+ #define CONST_CAST( T,expr) const_cast<T> (expr)
+ ^
+In file included from /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stdlib.h:40:0,
+                 from nes_emu/blargg_common.h:8,
+                 from nes_emu/Nes_Cart.h:10,
+                 from nes_emu/Nes_Mapper.h:9,
+                 from nes_emu/Mapper_Un1rom.cpp:25:
+/root/SDKs/SymbianSR1Qt474//epoc32/include/e32def.h:220:0: note: this is the location of the previous definition
+ #define CONST_CAST(type,exp) (const_cast<type>(exp))
+ ^
+arm-none-symbianelf-g++ -c -ones_emu/nes_ntsc.o nes_emu/nes_ntsc.cpp -march=armv6 -mapcs -mfpu=vfp -mfloat-abi=softfp -marm -D__SUPPORT_CPP_EXCEPTIONS__ -D_UNICODE -D__SYMBIAN32__ -D__EPOC32__ -D__MARM__ -D__EABI__ -DUNICODE -D__MARM_ARMV5__ -D__ARMV6__ -D__GCCE_4__ -D__GCCE_4_8__ -DNDEBUG -D__GCCE__ -D__SYMBIAN_STDCPP_SUPPORT__ -DSYMBIAN_ENABLE_SPLIT_HEADERS -D_GETOPT_DECLARED -D__BSD_VISIBLE -DHAVE_LIBPTHREAD -include /root/SDKs/SymbianSR1Qt474//epoc32/include/gcce/gcce.h -I/root/SDKs/SymbianSR1Qt474//include -I/root/SDKs/SymbianSR1Qt474//mkspecs/common/symbian -I/root/SDKs/SymbianSR1Qt474//epoc32/include -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/sys -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/stlportv5 -I/root/SDKs/SymbianSR1Qt474//epoc32/include/variant -I/root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis -I/root/gcce/usr/include -include /root/SDKs/SymbianSR1Qt474//epoc32/include/stdapis/openssl/opensslv.h -fexceptions -fvisibility-inlines-hidden -DGIT_VERSION=\"" 3c93d06-dirty"\" -O2 -DNDEBUG  -D__LIBRETRO__  -Wall -Wno-multichar -Wno-sign-compare -I. -I./nes_emu -I./libretro 
+** BUILDING quicknes_libretro_gcce.a FOR PLATFORM gcce **
+arm-none-symbianelf-ar rcs quicknes_libretro_gcce.a ./libretro/libretro.o ./nes_emu/abstract_file.o ./nes_emu/apu_state.o ./nes_emu/Blip_Buffer.o ./nes_emu/Effects_Buffer.o ./nes_emu/Mapper_Fme7.o ./nes_emu/Mapper_Mmc5.o ./nes_emu/Mapper_Namco106.o ./nes_emu/Mapper_Vrc6.o ./nes_emu/misc_mappers.o ./nes_emu/Mapper_15.o ./nes_emu/Mapper_60.o ./nes_emu/Multi_Buffer.o ./nes_emu/Nes_Apu.o ./nes_emu/Nes_Buffer.o ./nes_emu/Nes_Cart.o ./nes_emu/Nes_Core.o ./nes_emu/Nes_Cpu.o ./nes_emu/nes_data.o ./nes_emu/Nes_Effects_Buffer.o ./nes_emu/Nes_Emu.o ./nes_emu/Nes_File.o ./nes_emu/Nes_Fme7_Apu.o ./nes_emu/Nes_Mapper.o ./nes_emu/nes_mappers.o ./nes_emu/Nes_Mmc1.o ./nes_emu/Nes_Mmc3.o ./nes_emu/Mapper_Misc.o ./nes_emu/Mapper_Unrom512.o ./nes_emu/Mapper_Vrc1.o ./nes_emu/Mapper_Vrc3.o ./nes_emu/Mapper_Vrc2_4.o ./nes_emu/Mapper_Vrc7.o ./nes_emu/Nes_Vrc7.o ./nes_emu/emu2413.o ./nes_emu/emu2413_state.o ./nes_emu/Nes_Namco_Apu.o ./nes_emu/Mmc24.o ./nes_emu/Nes_Oscs.o ./nes_emu/Nes_Ppu.o ./nes_emu/Nes_Ppu_Impl.o ./nes_emu/Nes_Ppu_Rendering.o ./nes_emu/Nes_State.o ./nes_emu/nes_util.o ./nes_emu/Nes_Vrc6_Apu.o ./nes_emu/Data_Reader.o ./nes_emu/Mappers.o ./nes_emu/Mapper_74x161x162x32.o ./nes_emu/Mapper_180.o ./nes_emu/Mapper_193.o ./nes_emu/Mapper_240.o ./nes_emu/Mapper_241.o ./nes_emu/Mapper_244.o ./nes_emu/Mapper_246.o ./nes_emu/Mapper_AveNina.o ./nes_emu/Mapper_IremG101.o ./nes_emu/Mapper_IremTamS1.o ./nes_emu/Mapper_JalecoJF11.o ./nes_emu/Mapper_Namco54xx.o ./nes_emu/Mapper_Sunsoft1.o ./nes_emu/Mapper_Sunsoft2.o ./nes_emu/Mapper_TaitoX1005.o ./nes_emu/Mapper_TaitoTC0190.o ./nes_emu/Mapper_Un1rom.o ./nes_emu/nes_ntsc.o
